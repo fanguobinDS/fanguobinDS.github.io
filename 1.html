@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>绘制三次方贝塞尔曲线</title>
+ </head>
+ <body>
+  <canvas id="myCanvas" style="border:1px solid;" width="300" height="200"></canvas>
+  <script type="text/javascript">
+	var c=document.getElementById("myCanvas");
+	var context=c.getContext("2d");
+	//下面开始绘制三次方贝塞尔曲线context.strokeStyle="dark";
+	context.beginPath();
+	context.moveTo(0,200);
+	context.bezierCurveTo(25,50,75,50,300,200);
+	context.stroke();
+	context.globalCompositeOperation="source-over";
+	//下面绘制的直线用于表示上面曲线的控制点和控制线，控制点坐标为（25,50）和（75,50)context.strokeStyle="#ffOOff";
+	context.beginPath();
+	context.moveTo(25,50);
+	context.lineTo(0,200);
+	context.moveTo(75,50);
+	context.lineTo(300,200);
+	context.stroke();
+	</script>
+	</body>
+	</html>
