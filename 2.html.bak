@@ -7,9 +7,20 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <title>Document</title>
-  </style>
+      <style>
+        .cont
+        {
+            width:1960px;
+            height:1080px;
+            padding:50px 100px;
+            margin :20px auto;
+            text-align:center;
+            background-image:url("bg1.jpg");
+            background-size:100% 100%;
+        }
  </head>
  <body>
-  <video src="shipin.mp4" controls="controls" width="1960" height="1080" autoplay loop></video>
+ <div class="cont"> <video src="shipin.mp4 "controls="controls" width="1960"height="1080" autoplay loop> </video>
+</div>
  </body>
 </html>
