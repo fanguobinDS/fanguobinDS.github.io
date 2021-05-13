@@ -9,6 +9,6 @@
   <title>Document</title>
  </head>
  <body>
-  <video src="shipin.mp4" controls="controls"></video>
+  <video src="shipin.mp4" controls="controls" width="700" height="500" autoplay loop></video>
  </body>
 </html>
