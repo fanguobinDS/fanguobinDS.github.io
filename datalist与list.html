@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>datalist与list</title>
+ </head>
+ <body>
+  <form action="testform.asp" method="get">
+	网址：<input type="url" list="url_list" name="weblink">
+	<datalist id="url_list">
+		<option value="http://www.sina.com.cn" value="新浪" /></option>
+		<option value="http://www.sohu.com" value="搜狐" /></option>
+		<option value="http://www.163.com" value="网易" /></option>
+	</datalist>
+	<input type="submit" value="上传">
+  </form>
+ </body>
+</html>

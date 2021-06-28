@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>图形顺序与透明度</title>
+ </head>
+ <body>
+ <canvas id="myCanvas" style="border:1px solid;" width="300" height="200">
+	<script type="text/javascript">
+		var c=document.getElementById("myCanvas");
+		var context=c.getContext("2d");
+		context.fillStyle="rzzzed";
+		context.fillRect(50,25,100,100);
+		context.fillStyle="green";
+		context.globalCompositeOperation="source-over";
+		context.beginPath();
+		context.arc(150,125,50,0,Math.PI*2,true);
+		context.closePath();
+		context.globalAlpha=0.5;
+		context.fill();
+	</script>
+ </canvas>
+ </body>
+</html>

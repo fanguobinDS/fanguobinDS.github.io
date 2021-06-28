@@ -1,0 +1,27 @@
+<!DOCTYPE html><html>
+<head>
+<script language="javascript">
+function draw() {
+var ctx = document.getElementById('myCanvas').getContext('2d');
+var img = new Image();
+img.onload = function(){
+ctx.drawImage(img,0,0);
+ctx.font = "italic 60px Arial Black";
+ctx.shadowOffsetX = 3;
+ctx.shadowOffsetY = 3;
+ctx.shadowBlur = 2;
+ctx.shadowColor = "rgba(0,0,0,0.7)";
+ctx.fillStyle= "White";
+ctx.fillText("COOL",250,300);
+}
+img.src = 'images/zs2.jpg';
+}
+window.onload=function(){
+draw();
+}
+</script>
+</head>
+ <body>
+  <canvas id="myCanvas" width="500" height="500"></canvas>
+ </body>
+</html>

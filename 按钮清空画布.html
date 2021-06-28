@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript">
+	function clearMap(){
+		context.clearRect(0,0,500,400);
+	}
+</script>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>按钮清空画布操作</title>
+ </head>
+ <body>
+<canvas id="myCanvas" style="border:1px solid;" width="500" height="400">
+</canvas>
+<script type="text/javaScript">
+	var c=document.getElementById("myCanvas");
+	var context=c.getContext("2d");
+	context.strokeStyle="#ff00ff";
+	context.beginPath();
+	context.arc(200,150,100,-Math.PI,true);
+	context.stroke();
+</script><br>
+<input type="button" value="清空画布" name="" onClick="clearMap();">
+ </body>
+</html>

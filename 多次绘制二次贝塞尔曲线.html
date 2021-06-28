@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>绘制二次方贝塞尔曲线</title>
+ </head>
+ <body>
+  <canvas id="myCanvas" style="border:1px solid;" width="300" height="200"></canvas>
+  <script type="text/javascript">
+	var c=document.getElementById("myCanvas");
+	var context=c.getContext("2d");
+	for(var n=0;n<=100;n++)
+	{
+	context.strkeStyle="dark";
+	context.beginPath();
+	context.moveTo(0,200);
+	context.quadraticCurveTo(30*n,5*n,300,200);
+	context.stroke();
+	context.globalCompositeOperation="source-over";
+	}
+  </script>
+ </body>
+</html>
