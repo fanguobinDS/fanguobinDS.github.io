@@ -30,6 +30,22 @@
 			</select>
 		<p><input type="submit" name="button" id="button" value="提交" /></p>
 		<a href="2.html">查看帮助视频</a>
+		<a href="canvas引入图片.html">canvas引入图片</a>
+		<a href="datalist与list.html">datalist与list</a>
+		<a href="elements.html">elements</a>
+		<a href="form的form属性.html">form的form属性</a>
+		<a href="按钮清空画布.html">按钮清空画布</a>
+		<a href="保存与恢复canvas状态.html">保存与恢复canvas状态</a>
+		<a href="表单电子邮件类型输入.html">表单电子邮件类型输入</a>
+		<a href="表单数值限制.html">表单数值限制</a>
+		<a href="表单最优焦点.html">表单最优焦点</a>
+		<a href="得到文字宽度.html">得到文字宽度</a>
+		<a href="多次绘制二次贝塞尔曲线.html">多次绘制二次贝塞尔曲线</a>
+		<a href="键盘属性.html">键盘属性</a>
+		<a href="替换文本与提示文本.html">替换文本与提示文本</a>
+		<a href="图形顺序与透明度.html">图形顺序与透明度</a>
+		<a href="线型渐变.html">线型渐变</a>
+		<a href="移动坐标空间画伞.html">移动坐标空间画伞</a>
 	</form>
  </body>
 </html>
